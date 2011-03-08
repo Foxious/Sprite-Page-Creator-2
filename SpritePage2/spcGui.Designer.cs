@@ -36,14 +36,15 @@
 			this.btnRemove = new System.Windows.Forms.Button();
 			this.btnClear = new System.Windows.Forms.Button();
 			this.btnGenerate = new System.Windows.Forms.Button();
-			this.cbxSize = new System.Windows.Forms.ComboBox();
+			this.cbxWidth = new System.Windows.Forms.ComboBox();
 			this.label2 = new System.Windows.Forms.Label();
 			this.btn_Up = new System.Windows.Forms.Button();
 			this.btn_Down = new System.Windows.Forms.Button();
 			this.btnPreview = new System.Windows.Forms.Button();
 			this.btn_Reverse = new System.Windows.Forms.Button();
-			this.lbl_Color = new System.Windows.Forms.Label();
-			this.pnl_Color = new System.Windows.Forms.Panel();
+			this.lbl_X = new System.Windows.Forms.Label();
+			this.cbxHeight = new System.Windows.Forms.ComboBox();
+			this.chkSquare = new System.Windows.Forms.CheckBox();
 			this.SuspendLayout();
 			// 
 			// lvwSprites
@@ -118,24 +119,24 @@
 			this.btnGenerate.UseVisualStyleBackColor = true;
 			this.btnGenerate.Click += new System.EventHandler(this.btnGenerate_Click);
 			// 
-			// cbxSize
+			// cbxWidth
 			// 
-			this.cbxSize.FormattingEnabled = true;
-			this.cbxSize.Items.AddRange(new object[] {
+			this.cbxWidth.FormattingEnabled = true;
+			this.cbxWidth.Items.AddRange(new object[] {
             "256",
             "512",
             "1024",
             "2048",
             "4096"});
-			this.cbxSize.Location = new System.Drawing.Point(171, 309);
-			this.cbxSize.Name = "cbxSize";
-			this.cbxSize.Size = new System.Drawing.Size(84, 21);
-			this.cbxSize.TabIndex = 7;
+			this.cbxWidth.Location = new System.Drawing.Point(59, 310);
+			this.cbxWidth.Name = "cbxWidth";
+			this.cbxWidth.Size = new System.Drawing.Size(84, 21);
+			this.cbxWidth.TabIndex = 7;
 			// 
 			// label2
 			// 
 			this.label2.AutoSize = true;
-			this.label2.Location = new System.Drawing.Point(135, 312);
+			this.label2.Location = new System.Drawing.Point(23, 313);
 			this.label2.Name = "label2";
 			this.label2.Size = new System.Drawing.Size(30, 13);
 			this.label2.TabIndex = 9;
@@ -181,44 +182,64 @@
 			this.btn_Reverse.UseVisualStyleBackColor = true;
 			this.btn_Reverse.Click += new System.EventHandler(this.btn_Reverse_Click);
 			// 
-			// lbl_Color
+			// lbl_X
 			// 
-			this.lbl_Color.AutoSize = true;
-			this.lbl_Color.Location = new System.Drawing.Point(230, 343);
-			this.lbl_Color.Name = "lbl_Color";
-			this.lbl_Color.Size = new System.Drawing.Size(95, 13);
-			this.lbl_Color.TabIndex = 13;
-			this.lbl_Color.Text = "Background Color:";
-			this.lbl_Color.Visible = false;
+			this.lbl_X.AutoSize = true;
+			this.lbl_X.Location = new System.Drawing.Point(153, 312);
+			this.lbl_X.Name = "lbl_X";
+			this.lbl_X.Size = new System.Drawing.Size(12, 13);
+			this.lbl_X.TabIndex = 17;
+			this.lbl_X.Text = "x";
 			// 
-			// pnl_Color
+			// cbxHeight
 			// 
-			this.pnl_Color.BackColor = System.Drawing.Color.Black;
-			this.pnl_Color.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
-			this.pnl_Color.Location = new System.Drawing.Point(331, 333);
-			this.pnl_Color.Name = "pnl_Color";
-			this.pnl_Color.Size = new System.Drawing.Size(70, 33);
-			this.pnl_Color.TabIndex = 14;
-			this.pnl_Color.Visible = false;
+			this.cbxHeight.Enabled = false;
+			this.cbxHeight.FormattingEnabled = true;
+			this.cbxHeight.Items.AddRange(new object[] {
+            "256",
+            "512",
+            "1024",
+            "2048",
+            "4096"});
+			this.cbxHeight.Location = new System.Drawing.Point(171, 310);
+			this.cbxHeight.Name = "cbxHeight";
+			this.cbxHeight.Size = new System.Drawing.Size(84, 21);
+			this.cbxHeight.TabIndex = 18;
+			// 
+			// chkSquare
+			// 
+			this.chkSquare.AutoSize = true;
+			this.chkSquare.Checked = true;
+			this.chkSquare.CheckState = System.Windows.Forms.CheckState.Checked;
+			this.chkSquare.Location = new System.Drawing.Point(263, 312);
+			this.chkSquare.Name = "chkSquare";
+			this.chkSquare.Size = new System.Drawing.Size(62, 17);
+			this.chkSquare.TabIndex = 19;
+			this.chkSquare.Text = "Uniform";
+			this.chkSquare.UseVisualStyleBackColor = true;
+			this.chkSquare.CheckedChanged += new System.EventHandler(this.chkSquare_CheckedChanged);
 			// 
 			// formSPC
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(421, 406);
+			this.Controls.Add(this.chkSquare);
+			this.Controls.Add(this.cbxHeight);
+			this.Controls.Add(this.lbl_X);
 			this.Controls.Add(this.btn_Reverse);
 			this.Controls.Add(this.btnPreview);
-			this.Controls.Add(this.pnl_Color);
-			this.Controls.Add(this.lbl_Color);
 			this.Controls.Add(this.btn_Down);
 			this.Controls.Add(this.btn_Up);
 			this.Controls.Add(this.label2);
-			this.Controls.Add(this.cbxSize);
+			this.Controls.Add(this.cbxWidth);
 			this.Controls.Add(this.btnGenerate);
 			this.Controls.Add(this.btnClear);
 			this.Controls.Add(this.btnRemove);
 			this.Controls.Add(this.btnAdd);
 			this.Controls.Add(this.lvwSprites);
+			this.MaximumSize = new System.Drawing.Size(437, 444);
+			this.MinimumSize = new System.Drawing.Size(437, 444);
 			this.Name = "formSPC";
 			this.Text = "Sprite Page Creator 2.0";
 			this.ResumeLayout(false);
@@ -236,14 +257,15 @@
 		private System.Windows.Forms.Button btnRemove;
 		private System.Windows.Forms.Button btnClear;
 		private System.Windows.Forms.Button btnGenerate;
-		private System.Windows.Forms.ComboBox cbxSize;
+		private System.Windows.Forms.ComboBox cbxWidth;
 		private System.Windows.Forms.Label label2;
 		private System.Windows.Forms.Button btn_Up;
 		private System.Windows.Forms.Button btn_Down;
 		private System.Windows.Forms.Button btnPreview;
 		private System.Windows.Forms.Button btn_Reverse;
-		private System.Windows.Forms.Label lbl_Color;
-		private System.Windows.Forms.Panel pnl_Color;
+		private System.Windows.Forms.Label lbl_X;
+		private System.Windows.Forms.ComboBox cbxHeight;
+		private System.Windows.Forms.CheckBox chkSquare;
 
 
 	}

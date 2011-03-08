@@ -65,7 +65,14 @@ namespace SpritePage2
 			preview.Show();
 		}
 
-		// B U T T O N S ////////////////////////////////////////////////////////////////////////////////////////////////////////
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		private void ShowError(Exception ex)
+		{
+			MessageBox.Show(ex.Message, "Sprite Page Creator Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+		}
+
+		// I N T E R F A C E ////////////////////////////////////////////////////////////////////////////////////////////////////
 		private void btnAdd_Click(object sender, EventArgs e)
 		{
 			OpenFileDialog addSprite = new OpenFileDialog();
@@ -133,20 +140,30 @@ namespace SpritePage2
 				MessageBox.Show("Please add sprites to the page by clicking the 'Add' button", "Sprite Page Creator", MessageBoxButtons.OK, MessageBoxIcon.Information);
 				return;
 			}
-			Bitmap[] bmpArray = (from s in Sprites
-								 select s.Image).ToArray();
+
+			SpriteGen spritegen = new SpriteGen((from s in Sprites select s.Image).ToList());
+
 			try
 			{
-				PreviewImg(SpriteGen.MakePage(bmpArray, Convert.ToInt32(cbxSize.Text), pnl_Color.BackColor));
+				PreviewImg(spritegen.MakePage(Convert.ToInt32(cbxWidth.Text), Convert.ToInt32(cbxHeight.Text)));
 			}
-			catch (FormatException)
+
+			catch (FormatException ex)
 			{
-				MessageBox.Show("Size must be a number!", "Sprite Page Creator Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				ShowError(ex);
 			}
-			catch (Exception ex)
+
+			catch (PageOverflowException ex)
 			{
-				MessageBox.Show(ex.Message, "Sprite Page Creator Error!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				ShowError(ex);
 			}
+
+			catch (InvalidSizeException ex)
+			{
+				ShowError(ex);
+			}
+				
+
 		}
 
 		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -186,10 +203,20 @@ namespace SpritePage2
 			PreviewImg(Sprites[lvwSprites.SelectedIndices[0]].Image);
 		}
 
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 		private void btn_Reverse_Click(object sender, EventArgs e)
 		{
 			Sprites.Reverse();
 		}
+
+		/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+		private void chkSquare_CheckedChanged(object sender, EventArgs e)
+		{
+			cbxHeight.Enabled = !chkSquare.Checked;
+		}
+
 	}
 
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////

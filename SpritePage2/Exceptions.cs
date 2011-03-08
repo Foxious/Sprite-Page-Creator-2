@@ -5,26 +5,6 @@ using System.Text;
 
 namespace SpritePage2
 {
-	class ImproperSizeException:System.Exception
-	{
-		public ImproperSizeException()
-			: base()
-		{
-		}
-
-		public ImproperSizeException(string m)
-			: base(m)
-		{
-		}
-
-		public ImproperSizeException(string m, Exception iE)
-			: base(m, iE)
-		{
-		}
-	} //end ImproperSizeException
-
-	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 	class PageOverflowException : System.Exception
 	{
 		public PageOverflowException()
@@ -41,7 +21,7 @@ namespace SpritePage2
 			: base(m, iE)
 		{
 		}
-	} //end ImproperSizeException
+	} 
 
 	/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 

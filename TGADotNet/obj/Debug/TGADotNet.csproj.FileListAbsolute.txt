@@ -1,0 +1,5 @@
+Z:\CodeFolio\TGADotNet\TGADotNet\bin\Debug\TGADotNet.dll
+Z:\CodeFolio\TGADotNet\TGADotNet\bin\Debug\TGADotNet.pdb
+Z:\CodeFolio\TGADotNet\TGADotNet\obj\Debug\ResolveAssemblyReference.cache
+Z:\CodeFolio\TGADotNet\TGADotNet\obj\Debug\TGADotNet.dll
+Z:\CodeFolio\TGADotNet\TGADotNet\obj\Debug\TGADotNet.pdb

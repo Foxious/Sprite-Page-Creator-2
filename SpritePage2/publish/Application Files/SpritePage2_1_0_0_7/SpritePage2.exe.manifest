@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1">
+  <asmv1:assemblyIdentity name="SpritePage2.exe" version="1.0.0.7" publicKeyToken="02d33415060117ed" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="SpritePage2" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="SpritePage2.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the 
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward 
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="2.0.50727.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="System.Core" version="3.5.0.0" publicKeyToken="b77a5c561934e089" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="WindowsBase" version="3.0.0.0" publicKeyToken="31bf3856ad364e35" language="neutral" processorArchitecture="msil" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="SpritePage2.exe" size="20480">
+      <assemblyIdentity name="SpritePage2" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>FZVqD3XClS+WDBVOsX0g/j+ZFlk=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TGADotNet.dll" size="10240">
+      <assemblyIdentity name="TGADotNet" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+        <dsig:DigestValue>1zQ53pdqJaQZ650OQx4jrmSPyjE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="SpritePage2.exe.config" size="77">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" />
+      <dsig:DigestValue>w7WNgu5MxCvL4DAgISBxgwmhDzU=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=Dragon-PC\Dragon" issuerKeyHash="084e7065600285726359fe3a02206d9c46eff28b" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>ONRUu+FPxJ2zNmYn3zQY89gU8pc=</DigestValue></Reference></SignedInfo><SignatureValue>M1d/IeUmT+FbXcCgLRhi8ybhgondZ0Z+nr9blIeloEMDFIRNedImZ7uio8Q2pKqBGj7Ps9mJ1PpPaQGySBGD6yBraLDzboTU7Ex1gduTO5LitWS/C8yKZDApay6Xd15g84jX5JUnAhWSkHnf92Ab+OuERZuDKBelvKWYMW+pYjA=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>1oC7vGVlMcd46y6hJV4M4zYCil30ahrB8d715r9nMqZAKoI7Q3Hhi/+/hst2Y4DJ7GKgAb2sH53zIPyh7XYNfe6VJ7zYhZMaUPLfDSQ/0f9MultXGLxRRILQTQmK4hbHmsBnyEOgUxSvlwWzesa5IvGGt9C2htMNeuSKzBQ027M=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="97f214d8f31834df276636b39dc44fe1bb54d438" Description="" Url=""><as:assemblyIdentity name="SpritePage2.exe" version="1.0.0.7" publicKeyToken="02d33415060117ed" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=Dragon-PC\Dragon</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha1" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha1" /><DigestValue>8wiuADhQjOG3uC/tHHi7tXdk4cI=</DigestValue></Reference></SignedInfo><SignatureValue>VDVe673zYyR+aMmonMdMVjor3oqxxCVOp8uCFh53y/ut0G1jtAgPv41T4JRHQ8Y6h9QrXsqoK8WD2hEW+tvsr7e+2ZMZMw5mjdaQXH4Swq101NAL1zyYkOaGxnLtVQfFPJ9aB/EB2AXCLmbwjdUQvBMBpM18Jn5iscC4Ocsw/Bc=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>1oC7vGVlMcd46y6hJV4M4zYCil30ahrB8d715r9nMqZAKoI7Q3Hhi/+/hst2Y4DJ7GKgAb2sH53zIPyh7XYNfe6VJ7zYhZMaUPLfDSQ/0f9MultXGLxRRILQTQmK4hbHmsBnyEOgUxSvlwWzesa5IvGGt9C2htMNeuSKzBQ027M=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB2TCCAUKgAwIBAgIQVRKIE33dR4tM08QEpFUcjjANBgkqhkiG9w0BAQUFADArMSkwJwYDVQQDHiAARAByAGEAZwBvAG4ALQBQAEMAXABEAHIAYQBnAG8AbjAeFw0xMDEwMjcyMTE1MTlaFw0xMTEwMjgwMzE1MTlaMCsxKTAnBgNVBAMeIABEAHIAYQBnAG8AbgAtAFAAQwBcAEQAcgBhAGcAbwBuMIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDWgLu8ZWUxx3jrLqElXgzjNgKKXfRqGsHx3vXmv2cypkAqgjtDceGL/7+Gy3ZjgMnsYqABvawfnfMg/KHtdg197pUnvNiFkxpQ8t8NJD/R/0y6W1cYvFFEgtBNCYriFseawGfIQ6BTFK+XBbN6xrki8Ya30LaG0w165IrMFDTbswIDAQABMA0GCSqGSIb3DQEBBQUAA4GBAFXOldkgsjGLJjGX74bdHocRBp3MDdpe+7GuPD6I5uIaxEuIoczhxOd5S+lAgzoZUBq5Mdoh0L+zH5Xvjx7qyFs6Bm1M+failEbsJazAZfVFxnHMurfYdykr5FS6gYjJ308CzeBorw+c2vb+YKKQx6VCUZ0MfchowLkujGrWMHuc</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>

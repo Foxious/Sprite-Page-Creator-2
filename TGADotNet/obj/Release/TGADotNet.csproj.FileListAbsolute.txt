@@ -1,0 +1,10 @@
+Z:\CodeFolio\TGADotNet\TGADotNet\bin\Release\TGADotNet.dll
+Z:\CodeFolio\TGADotNet\TGADotNet\bin\Release\TGADotNet.pdb
+Z:\CodeFolio\TGADotNet\TGADotNet\obj\Release\ResolveAssemblyReference.cache
+Z:\CodeFolio\TGADotNet\TGADotNet\obj\Release\TGADotNet.dll
+Z:\CodeFolio\TGADotNet\TGADotNet\obj\Release\TGADotNet.pdb
+C:\Users\Dragon\Work\TGADotNet\TGADotNet\bin\Release\TGADotNet.dll
+C:\Users\Dragon\Work\TGADotNet\TGADotNet\bin\Release\TGADotNet.pdb
+C:\Users\Dragon\Work\TGADotNet\TGADotNet\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Dragon\Work\TGADotNet\TGADotNet\obj\Release\TGADotNet.dll
+C:\Users\Dragon\Work\TGADotNet\TGADotNet\obj\Release\TGADotNet.pdb

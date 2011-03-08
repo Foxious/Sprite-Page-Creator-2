@@ -1,0 +1,16 @@
+C:\Users\Dragon\Work\TGADotNet\SpritePage2\bin\Debug\SpritePage2.exe.config
+C:\Users\Dragon\Work\TGADotNet\SpritePage2\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Dragon\Work\TGADotNet\SpritePage2\obj\Debug\SpritePage2.ImagePreview.resources
+C:\Users\Dragon\Work\TGADotNet\SpritePage2\obj\Debug\SpritePage2.formSPC.resources
+C:\Users\Dragon\Work\TGADotNet\SpritePage2\obj\Debug\SpritePage2.Properties.Resources.resources
+C:\Users\Dragon\Work\TGADotNet\SpritePage2\obj\Debug\SpritePage2.csproj.GenerateResource.Cache
+C:\Users\Dragon\Work\TGADotNet\SpritePage2\bin\Debug\SpritePage2.exe.manifest
+C:\Users\Dragon\Work\TGADotNet\SpritePage2\bin\Debug\SpritePage2.application
+C:\Users\Dragon\Work\TGADotNet\SpritePage2\bin\Debug\SpritePage2.exe
+C:\Users\Dragon\Work\TGADotNet\SpritePage2\bin\Debug\SpritePage2.pdb
+C:\Users\Dragon\Work\TGADotNet\SpritePage2\bin\Debug\TGADotNet.dll
+C:\Users\Dragon\Work\TGADotNet\SpritePage2\bin\Debug\TGADotNet.pdb
+C:\Users\Dragon\Work\TGADotNet\SpritePage2\obj\Debug\SpritePage2.exe.manifest
+C:\Users\Dragon\Work\TGADotNet\SpritePage2\obj\Debug\SpritePage2.application
+C:\Users\Dragon\Work\TGADotNet\SpritePage2\obj\Debug\SpritePage2.exe
+C:\Users\Dragon\Work\TGADotNet\SpritePage2\obj\Debug\SpritePage2.pdb

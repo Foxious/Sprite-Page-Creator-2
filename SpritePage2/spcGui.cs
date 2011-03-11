@@ -145,7 +145,9 @@ namespace SpritePage2
 
 			try
 			{
-				PreviewImg(spritegen.MakePage(Convert.ToInt32(cbxWidth.Text), Convert.ToInt32(cbxHeight.Text)));
+				int width = Convert.ToInt32(cbxWidth.Text);
+				int height = chkSquare.Checked ? Convert.ToInt32(cbxHeight.Text) : width;
+				PreviewImg(spritegen.MakePage(width, height));
 			}
 
 			catch (FormatException ex)
@@ -162,7 +164,6 @@ namespace SpritePage2
 			{
 				ShowError(ex);
 			}
-				
 
 		}
 

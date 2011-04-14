@@ -146,7 +146,7 @@ namespace SpritePage2
 			try
 			{
 				int width = Convert.ToInt32(cbxWidth.Text);
-				int height = chkSquare.Checked ? Convert.ToInt32(cbxHeight.Text) : width;
+				int height = chkSquare.Checked ? width : Convert.ToInt32(cbxHeight.Text);
 				PreviewImg(spritegen.MakePage(width, height));
 			}
 

@@ -8,3 +8,8 @@ C:\Users\Dragon\Work\TGADotNet\TGADotNet\bin\Release\TGADotNet.pdb
 C:\Users\Dragon\Work\TGADotNet\TGADotNet\obj\Release\ResolveAssemblyReference.cache
 C:\Users\Dragon\Work\TGADotNet\TGADotNet\obj\Release\TGADotNet.dll
 C:\Users\Dragon\Work\TGADotNet\TGADotNet\obj\Release\TGADotNet.pdb
+Z:\GIT\SPC2\TGADotNet\bin\Release\TGADotNet.dll
+Z:\GIT\SPC2\TGADotNet\bin\Release\TGADotNet.pdb
+Z:\GIT\SPC2\TGADotNet\obj\Release\ResolveAssemblyReference.cache
+Z:\GIT\SPC2\TGADotNet\obj\Release\TGADotNet.dll
+Z:\GIT\SPC2\TGADotNet\obj\Release\TGADotNet.pdb
